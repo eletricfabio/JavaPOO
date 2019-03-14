@@ -1,27 +1,41 @@
-package Ex3;
+package AulaListas;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
 
 	public static void main(String[] args) {
-		Revista rev = new Revista();
-		rev.setnome("Gospel");
-		rev.setdataPublicacao("fev/2000");
-		rev.seteditora("EDBrasil");
+		// Venda dos produtos POO Produtos + Vendas + Cliente
+
+		Cliente cliente = new Cliente();
+		cliente.codCliente = 1;
+		cliente.nomeCliente = "Fábio";
+		cliente.cpf = "123.456.789-10";
 		
-		Livro liv = new Livro();
-		liv.setnome("Bíblia");
-		liv.setdataPublicacao("Dez/2008");
-		liv.seteditora("EDBahia");
+		List<Produto> produtos = new ArrayList<>();
 		
-		Publicacao pub = new Publicacao();
-		pub.setnome("ADD");
-		pub.setdataPublicacao("fev/2010");
-		pub.seteditora("EDSergipe");
+		Produto prod1 = new Produto();
+		prod1.codProduto = 1;
+		prod1.nomeProduto = "Roupa";
 		
-		rev.imprimir();
-		liv.imprimir();
-		pub.imprimir();
+		produtos.add(prod1);
 		
+		Produto prod2 = new Produto();
+		prod2.codProduto = 2;
+		prod2.nomeProduto = "Calça";
+		
+		produtos.add(prod2);
+		
+		Produto prod3 = new Produto();
+		prod3.codProduto = 3;
+		prod3.nomeProduto = "Blusa";
+		
+		produtos.add(prod3);
+		
+		Venda venda = new Venda();
+		venda.addVenda(produtos, cliente);
+		venda.vizualizaVenda();
 	}
 
 }
