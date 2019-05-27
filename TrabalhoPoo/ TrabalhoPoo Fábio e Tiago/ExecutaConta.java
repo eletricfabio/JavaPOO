@@ -11,15 +11,7 @@ public class ExecutaConta {
         public static void mostrarCliente (Cadastro obj) {
 			System.out.println("\nDados do Cliente: " + obj.getCpf() + obj.getNome());
         }
-		
-        /*System.out.println("\nDigite o seu CPF: ");
-		int pj = s.nextInt();*/
-		
-        /*Cadastro meuCliente = new Cadastro(null, null, null, 0, 0, pj);
-        meuCliente.setInt(pj);*/
-		
-		/*System.out.println("\nDigite a sua Conta: ");
-		String conta = s.nextLine();*/
+	
 		
 		public static void main(String[] args) {
 				
@@ -29,7 +21,7 @@ public class ExecutaConta {
 		
 		Cadastro cad_PF = new Cadastro(null, null, null, 0, 0, 0);
 		cad_PF.setCpf("011781205692");
-		cad_PF.setNome("Fábio Vieira dos Santos");
+		cad_PF.setNome("FÃ¡bio Vieira dos Santos");
 		cad_PF.setInt(35);
 		
 		System.out.println("\nDigite sua conta: ");
@@ -46,7 +38,7 @@ public class ExecutaConta {
 		System.out.println("\nDigite um valor de saque: " + "R$");
                 double sacar = s.nextDouble();
                          
-                System.out.println("\nDigite o valor do empréstimo");
+                System.out.println("\nDigite o valor do emprÃ©stimo");
 		double solicitar_emprestimo = s.nextDouble();
                 
                 System.out.println("\nDigite o valor do TED");
@@ -64,7 +56,7 @@ public class ExecutaConta {
                 System.out.println("\nDigite O banco de Destino");
 		String Banco_Dest = input.nextLine();
                 
-                System.out.println("\nDigite a Agência para o TED");
+                System.out.println("\nDigite a AgÃªncia para o TED");
 		String Agencia = input.nextLine();
                 
                 System.out.println("\nDigite a conta para o TED");
